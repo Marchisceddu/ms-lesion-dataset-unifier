@@ -1,0 +1,7 @@
+# Python dependencies for MS Lesion Dataset Unifier
+SimpleITK>=2.2.0
+tqdm>=4.65.0
+numpy>=1.20.0
+
+# Note: FSL (FMRIB Software Library) must be installed at system level.
+# Ensure that FSLDIR is configured in your environment and 'flirt' is in PATH.

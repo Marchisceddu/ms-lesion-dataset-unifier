@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ms-lesion-dataset-unifier"
+version = "1.0.0"
+description = "A modular, extensible pipeline to harmonize and unify heterogeneous Multiple Sclerosis (MS) MRI datasets into MNI152 stereotactic space."
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+    { name = "Marco Pilia" },
+    { name = "Simone Dessì" }
+]
+license = { text = "MIT" }
+dependencies = [
+    "SimpleITK>=2.2.0",
+    "tqdm>=4.65.0",
+    "numpy>=1.20.0"
+]
+
+[project.scripts]
+ms-unifier = "src.pipeline:main"
+ms-process-single = "src.process_single:main"
